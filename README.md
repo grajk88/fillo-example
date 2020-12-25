@@ -1,6 +1,6 @@
 # Sample program for Fillo - Excel Library
 
-This project contacins tests for -
+This project contains tests for -
 
 1. Read
 2. Update
