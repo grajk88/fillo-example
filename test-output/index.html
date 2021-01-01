@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.gt.tests.FilloTest" class="method navigator-link" hash-for-method="addData">addData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.gt.tests.FilloTest" class="method navigator-link" hash-for-method="extractData">extractData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.gt.tests.FilloTest" class="method navigator-link" hash-for-method="removeData">removeData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.gt.tests.FilloTest" class="method navigator-link" hash-for-method="writeData">writeData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,9 +142,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addData">
+                  </a> <!-- addData -->
+                  <span class="method-name">addData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="extractData">
+                  </a> <!-- extractData -->
+                  <span class="method-name">extractData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="removeData">
                   </a> <!-- removeData -->
                   <span class="method-name">removeData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="writeData">
+                  </a> <!-- writeData -->
+                  <span class="method-name">writeData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0t/xt4pm85103qftmm6s855x7h40000gn/T/testng-eclipse-1822249423/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0t/xt4pm85103qftmm6s855x7h40000gn/T/testng-eclipse-1078485781/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +182,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.gt.tests.FilloTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;removeData&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.gt.tests.FilloTest --&gt;
+      &lt;class name=&quot;com.gt.tests.FilloTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,16 +222,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removeData')
+data.setCell(0, 1, 'addData')
 data.setCell(0, 2, 'com.gt.tests.FilloTest')
-data.setCell(0, 3, 230);
+data.setCell(0, 3, 225);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'removeData')
+data.setCell(1, 2, 'com.gt.tests.FilloTest')
+data.setCell(1, 3, 58);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'writeData')
+data.setCell(2, 2, 'com.gt.tests.FilloTest')
+data.setCell(2, 3, 49);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'extractData')
+data.setCell(3, 2, 'com.gt.tests.FilloTest')
+data.setCell(3, 3, 41);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 230 ms</span>
+              <span class="suite-total-time">Total running time: 373 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,20 +258,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.gt.tests.FilloTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">extractData</span>
-                <br/>
-                <span class="ignored-method-name">writeData</span>
-                <br/>
-                <span class="ignored-method-name">addData</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -242,9 +275,25 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">removeData</span>
-                <span class="method-start">414 ms</span>
+                <span class="method-name">addData</span>
+                <span class="method-start">593 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">extractData</span>
+                <span class="method-start">821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeData</span>
+                <span class="method-start">863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">writeData</span>
+                <span class="method-start">922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">1224 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
